@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head> 
+        <meta charset="utf-8"/>
+        <title> RE6 </title>
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+        <link rel="stylesheet" type="text/css" href="_css/fotos.css"/>
+        <script src="_javascript/funcoes.js"> </script>
+        <style>
+            fieldset {
+                border-bottom-color: #cecece;
+                margin: 20px;
+            }
+            form {
+                width: 500px;
+                margin: auto;
+            }
+            legend {
+                color: #888;
+                font-size: 13pt;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="conteudo">
+            <header id="cabecalho">
+                <nav id="menu">
+                    <ul>
+                        <a href="index.html"><li> Home </li></a>
+                        <a href="persona.html"><li> Personagens </li></a>
+                        <a href="fotos.html"><li> Fotos </li></a>
+                        <a href="noticias.html"><li> Noticias  </li></a>
+                        <a href="Curiosidade.html"><li>   curiosidade  </li></a>
+                    </ul>
+                </nav>        
+                <h1> RESIDENT EVIL </h1>
+                <img id="icone" src="_imagens/seis.png"/>
+
+            </header>
+            <section>
+                <article id="noticia">
+                    <h3> 
+                        Review > Compra
+                    </h3>
+                    <h1> Avaliação do jogo </h1>
+                    <h3> por Lucas Amaral e Pedro Martos  </h3>
+                    <h3> Atualizado em 14/Abril/2019 </h3>
+
+                    <form id="contato" method="post" action="programa.php"> 
+                            <fieldset id="pedido"> 
+                                    <legend> 
+                                        Expiriencie
+                                    </legend>  
+                                <p>
+                                    <label for="quantidade"> Quantidade:</label> 
+                                    <input type="number" id="quantidade" min="0" onchange="calcular()" placeholder="Digite 0 se não quiser"/>
+                                  </p> 
+                                   <p>
+                                     <label for="presso">   Preço Total: R$ </label> 
+                                     <input type="number" id="presso" min="0"/>
+                                   </p>
+                                </fieldset>   
+                        <fieldset id="usuario"> 
+                            <legend> 
+                                Avalie
+                            </legend>    
+                            <p> 
+                                <label for="nome"> Nome de usuario: </label>
+                                <input id="nome" type="text" placeholder="xXAlgoXx">
+                            </p>          
+                            <p> 
+                                <label for="char"> 
+                                    Personagem Favorito: 
+                                </label>
+                                <select id="char">
+                                    <option value="LK"> Leon </option>
+                                    <option value="HH"> Helena </option>
+                                    <option value="CR"> Chris </option>
+                                    <option value="PN"> Piers </option>
+                                    <option value="JM"> Jake </option>
+                                    <option value="SB"> Sherry </option>
+                                    <option value="AW"> Ada </option>
+                                </select>    
+                            </p>
+                            <p> 
+                                Gostou do Jogo?
+                            </p>
+                            <p> 
+                                <input id="s" type="radio" name="sexo">  
+                                <label for="s"> Sim </label>
+                            </p>
+                            <p>
+                                <input id="n" type="radio"  name="sexo"> 
+                                <label for="n"> Não </label>
+                            </p>
+                            <p> 
+                                <label for="grau"> Nota do Jogo: </label>
+                                1 <input type="range" id="grau" > 10    
+                            </p>   
+                            <p>     
+                                <label for="mensagem"> Opnião: </label>
+                        </p>    
+                        <p> 
+                               <textarea 
+                                id="mensagem" 
+                                cols="50" 
+                                rows="10" 
+                                placeholder="Digite aqui sua mensagem"></textarea>
+                        </p> 
+                        </fieldset> 
+                        
+                    <input type="image" src="_imagens/botao-enviar.png"/>
+            </form>        
+
+</article>
+</section>        
+<footer id="rodape">
+        <p> 
+            Este site foi feito por fãs
+            (Site Em Fase De Desenvolvimento)
+                <br/> Lucas & Pedro
+            </p>
+</footer>   
+</div> 
+</body>
+</html>
